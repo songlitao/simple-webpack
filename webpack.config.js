@@ -21,7 +21,7 @@ module.exports = {
                     path.join(__dirname, 'loaders', 'less-loader.js')
                 ]
             },
-            // 处理脚本的 loader（需要使用webpack进行打包测死）
+            // 处理脚本的 loader（需要使用webpack进行打包测试）
             // {
             //     test: /\.js$/,
             //     use: {
