@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "简单实现webpack打包",
     "scripts": {
-        "build": "node lib/webpack.js"
+        "build": "node bin/webpack.js"
     },
     "license": "MIT",
     "devDependencies": {
@@ -13,6 +13,7 @@
         "@babel/traverse": "^7.12.9",
         "ejs": "^3.1.5",
         "less": "^3.12.2",
-        "loader-utils": "^2.0.0"
+        "loader-utils": "^2.0.0",
+        "tapable": "^2.2.0"
     }
 }

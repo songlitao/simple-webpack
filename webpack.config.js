@@ -1,5 +1,7 @@
 const path = require('path');
 
+const CleanDistPlugin = require('./plugins/clean-dist-plugin.js');
+
 module.exports = {
     entry: './src/main.js',
     output: {
@@ -32,5 +34,8 @@ module.exports = {
             //     }
             // }
         ]
-    }
+    },
+    plugins: [
+        new CleanDistPlugin()
+    ]
 };
