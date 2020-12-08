@@ -1,5 +1,5 @@
 const path = require('path');
-const Compiler = require('../lib/compiler');
+const Compiler = require('../lib/Compiler');
 
 // webpack原理： https://www.jianshu.com/p/8dd5885bfb66
 // 参考1：https://blog.csdn.net/weixin_34124939/article/details/91386853
