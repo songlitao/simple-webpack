@@ -44,12 +44,11 @@ class CleanDistPlugin{
     }
     apply(compiler){
         compiler.hooks.emit.tapAsync('clean-dist-plugin', (compilation, callback) => {
-            console.log('CleanDistPlugin执行了...');
+            console.log('CleanDistPlugin 执行了...');
             // 获取路径
             const compiler = compilation.compiler;
             const outputPath = path.resolve(compiler.root, compiler.options.output.path);
             removeFiles(outputPath, () => {
-                console.log('output.path目录清理完成...');
                 // 定力目录后执行回调，让 webpack 继续执行
                 callback();
             });

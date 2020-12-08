@@ -8,6 +8,7 @@ const loader = function(source){
         style.innerHTML = ${JSON.stringify(source)};
         document.body.appendChild(style);
     `;
+    console.log('style-loader 执行了...');
     return script;
 }
 

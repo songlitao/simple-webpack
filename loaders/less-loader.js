@@ -13,6 +13,7 @@ const loader = function(source){
             css = output.css;
         }
     });
+    console.log('less-loader 执行了...');
     return css;
 }
 
